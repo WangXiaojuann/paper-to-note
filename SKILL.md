@@ -40,7 +40,6 @@ Use the template's headings, section order, and icon markers for both new and up
 - Confirm that only the target `.md` was edited.
 - Check that YAML/front matter is valid.
 - Check that the abstract excludes JEL codes.
-- Check that `My thoughts` contains no wikilinks.
 - Check that any formula in the note renders correctly in Obsidian and is not left as raw LaTeX text.
 - Re-open the generated `.md` and verify that all icon markers render correctly as icons.
 - If any mojibake or encoding corruption appears, such as broken emoji markers or garbled text like `馃`, `鈿`, or `锔`, repair the file and check again until the rendered text is clean.
@@ -58,9 +57,7 @@ year: 2025
 journal: "Journal Name"
 ---
 
-PDF: [[Paper File.pdf]]
-
-[[Topic 1]] [[Topic 2]]
+PDF: Paper File.pdf
 
 ### Abstract
 
@@ -109,30 +106,13 @@ A one-sentence takeaway.
 - Do not add a separate summary, literature synthesis, batch log, or extra sections.
 - Do not add unsupported interpretations.
 - If you include a formula, write it in valid Obsidian/MathJax syntax so it renders correctly, rather than as raw LaTeX text or code-formatted pseudo-math.
-- Add topic links only when highly certain.
 - If the paper has no clear journal information, write `"working paper"`.
 
 ## Metadata Rules
 
 - Quote `title`, `authors`, and `journal` in YAML to avoid invalid front matter.
 - Keep `year` numeric.
-- Use the exact PDF filename in the `PDF: [[...]]` line.
-- Add topic links only when highly certain.
-- Use suitable topic links when they fit well, including:
-  - `[[FOMC]]`
-  - `[[Multimodel]]`
-  - `[[Text analysis]]`
-  - `[[LLM]]`
-  - `[[Behavioral Finance]]`
-  - `[[Macro]]`
-  - `[[ML in asset pricing]]`
-  - `[[Bond]]`
-  - `[[Portfolio Optimization]]`
-  - `[[Theoretical]]`
-  - `[[Empirical]]`
-- If these do not fit the paper well, generate one or two more suitable topic links based on the paper's core question, market, method, or field.
-- If a knowledge base is available, reuse matching existing topic names before creating a new topic.
-- If uncertain about a topic link, omit it rather than guess.
+- Use the exact PDF filename as plain text in the `PDF:` line.
 
 ## Section Rules
 
@@ -215,7 +195,6 @@ A one-sentence takeaway.
 - Keep the prose accurate but more direct and easier to understand. Explain clearly why a point is a strength, a limitation, or a useful extension.
 - Give constructive evaluation only: strengths, limitations, and plausible extensions.
 - Favor extensions relevant to finance, asset pricing, bond markets, or ML when appropriate.
-- Do not use wikilinks in this section.
 
 ## Style and Formatting
 

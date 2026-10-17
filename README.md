@@ -6,7 +6,7 @@ A Codex skill that reads an academic paper PDF and creates a structured Markdown
 
 Each note follows a fixed template covering the abstract, research questions, sample and data, key variables, method, main findings, contributions, a one-sentence takeaway, and constructive comments.
 
-Notes are written in English, with section icons and Obsidian-compatible links and math. The abstract is copied from the paper, while factual claims must be supported by the PDF.
+Notes are written in English. The abstract is copied from the paper, while factual claims must be supported by the PDF.
 
 By default, the note is saved alongside the PDF with the same base filename and a `.md` extension.
 
