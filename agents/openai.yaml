@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper to Note"
+  short_description: "Convert one paper PDF into a concise Markdown research note."
+  default_prompt: "Use $paper-to-note to create or update the Markdown note for this paper PDF."
